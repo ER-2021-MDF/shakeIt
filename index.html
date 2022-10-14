@@ -34,6 +34,7 @@ window.onload = function() {
     // register a shake event
     window.addEventListener('shake', shakeEventDidOccur, false);
 
+    document.getElementById("pocket").style.webkitAnimationPlayState = "paused";
     //shake event callback
     function shakeEventDidOccur () {
 
