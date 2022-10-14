@@ -5,24 +5,8 @@
 <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>Shake.js</title>
-<style type="text/css">
-body {
-    font: 1em/1.3em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; /* 16px / 21px */
-    text-shadow: rgba(255,255,255,0.8) 0 1px 0;
-    text-align: center;
-}
-
-#pocket{
-background-image: url(pocket.png);
-    height: 50%;
-    width: 19%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 40.5%;
-}
-</style>
 <script type="text/javascript" src="shake.js"></script>
+    <link rel="stylesheet" src="style.css">
 </head>
 <body>
 
@@ -58,7 +42,7 @@ window.onload = function() {
     }
     
     function shakePocket(){
-        
+        document.getElementById("pocket").style.webkitAnimationPlayState = "running";
     }
 };
 </script>
