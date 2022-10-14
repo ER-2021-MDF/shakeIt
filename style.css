@@ -1,3 +1,11 @@
+@keyframes shakeIt {
+  0%   {rotate: 0;}
+  25%{rotate: "45deg";}
+  50%  {rotate: "0deg";}
+  75%  {rotate: "-45deg";}
+  100% {rotate: "0deg";}
+}
+
 body {
     font: 1em/1.3em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; /* 16px / 21px */
     text-shadow: rgba(255,255,255,0.8) 0 1px 0;
@@ -12,16 +20,9 @@ background-image: url(pocket.png);
     background-size: contain;
     position: absolute;
     left: 40.5%;
-    animation-duration: 0.5s;
+    animation-duration: 2s;
     animation-name: shakeIt;
     animation-iteration-count: 8;
 }
 
-@keyframes shakeIt {
-  from {
-    rotate:"45deg";
-  }
 
-  to {
-    rotate:"-45deg"
-  }
