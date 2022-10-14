@@ -7,11 +7,13 @@
 <title>Shake.js</title>
 <style type="text/css">
 body {
-    background: #E9E9E9;
-    color: #333;
     font: 1em/1.3em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; /* 16px / 21px */
     text-shadow: rgba(255,255,255,0.8) 0 1px 0;
     text-align: center;
+};
+
+#pocket{
+backgorund-image: url("pocket");
 }
 </style>
 <script type="text/javascript" src="shake.js"></script>
@@ -24,7 +26,9 @@ body {
 <p>Shake your iPhone/iPad to see a custom action.</p>
 <p>Works on iOS +4.2.1, Android 4.0.3 (default browser), Opera Mobile (Android), BlackBerry PlayBook 2.0</p>
 
-<p><a href="http://dev.w3.org/geo/api/spec-source-orientation">W3C DeviceOrientation Event Specification</a></p>
+<div class="pocket" id="pocket">
+    -
+</div>
 
 <script type="text/javascript">
 window.onload = function() {
