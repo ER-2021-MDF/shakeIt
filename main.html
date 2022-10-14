@@ -6,33 +6,26 @@
 		
 		<script>  
 			//listen to shake event
-			var shakeEvent = new Shake({threshold: 15}); //soglia=15, soglia di cosa? comunque opzionale
+			var shakeEvent = new Shake();
 			
 			shakeEvent.start();
 			
 			window.addEventListener('shake', shakeEventDidOccur, false);
 
-			//function to call when shake occurs
 			function shakeEventDidOccur () {
 
-			//put your own code here etc.
 			alert('shake!');
 			}
-
-			//stop listening
-			/*function stopShake(){
-				shakeEvent.stop();
-			}*/
-
-			//check if shake is supported or not.
-			//if(!("ondevicemotion" in window)){alert("Not Supported");}
+			
 		</script>
+		
+		<title>SHAKE it</title>
 
 	</head>
 
 	<body>
 
-
+		PROVA A scuotere
 
 	</body>
 
